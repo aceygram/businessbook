@@ -454,7 +454,7 @@
     background: var(--navy);
     display: flex; align-items: center; justify-content: center;
   }
-  .img-container img {
+  .author-img-wrap .img-container img {
     
     width: 350px;         /* Set your desired width */
     aspect-ratio: 1 / 1;  /* Forces the height to equal the width */
