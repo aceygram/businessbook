@@ -607,3 +607,21 @@
   .hero-left > *:nth-child(5) { animation-delay: 0.46s; }
   .hero-left > *:nth-child(6) { animation-delay: 0.54s; }
   .hero-visual { animation: fadeUp 0.9s 0.45s ease both; }
+
+    .whatsapp-float img {
+    width: 80px;
+    height: 80px;
+    transition: transform 0.5s ease;
+  }
+
+    .whatsapp-float img:hover {
+    transform: scale(1.2);
+  }
+
+  .whatsapp-float {
+    position: fixed;
+    right: 20px;
+    bottom: 20px;
+    z-index: 1000;
+}
+
