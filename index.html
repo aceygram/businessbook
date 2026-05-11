@@ -4,61 +4,91 @@
 <meta charset="UTF-8"/>
 <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
 <title>From Small Hustle to Hundreds of Millions — Chisom Ifeanacho Okeke</title>
-<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,700;0,800;0,900;1,700&family=DM+Sans:wght@300;400;500;600&display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,700;0,800;0,900;1,700&family=DM+Sans:opsz,wght@9..40,300;9..40,400;9..40,500;9..40,600;9..40,700&display=swap" rel="stylesheet"/>
 <link rel="stylesheet" href="style.css">
-        <link rel="icon" href="images/hustle-cover.jpg" type="image/png">
-        <!-- Meta Pixel Code -->
-        <script>
-          !function(f,b,e,v,n,t,s)
-          {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
-          n.callMethod.apply(n,arguments):n.queue.push(arguments)};
-          if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
-          n.queue=[];t=b.createElement(e);t.async=!0;
-          t.src=v;s=b.getElementsByTagName(e)[0];
-          s.parentNode.insertBefore(t,s)}(window, document,'script',
-          'https://connect.facebook.net/en_US/fbevents.js');
-          fbq('init', '936428952753528');
-          fbq('track', 'PageView');
-        </script>
-        <noscript><img height="1" width="1" style="display:none"
-        src="https://www.facebook.com/tr?id=936428952753528&ev=PageView&noscript=1"
-        /></noscript>
-        <!-- End Meta Pixel Code -->
+<link rel="icon" href="images/hustle-cover.jpg" type="image/png">
+
+<!-- Meta Pixel Code -->
+<script>
+  !function(f,b,e,v,n,t,s)
+  {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+  n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+  if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+  n.queue=[];t=b.createElement(e);t.async=!0;
+  t.src=v;s=b.getElementsByTagName(e)[0];
+  s.parentNode.insertBefore(t,s)}(window, document,'script',
+  'https://connect.facebook.net/en_US/fbevents.js');
+  fbq('init', '936428952753528');
+  fbq('track', 'PageView');
+</script>
+<noscript><img height="1" width="1" style="display:none"
+src="https://www.facebook.com/tr?id=936428952753528&ev=PageView&noscript=1"
+/></noscript>
+<!-- End Meta Pixel Code -->
 </head>
 <body>
 
-<!-- ANNOUNCEMENT BAR -->
-<div class="bar">
-  🚀 Now Available — Get your copy today and start building your hundreds of millions story
+<!-- ═══════════════════════════════════════════
+     URGENCY BAR — countdown timer
+═══════════════════════════════════════════ -->
+<div class="urgency-bar">
+  <span class="urgency-fire">🔥</span>
+  <span class="urgency-text">Introductory Price Ends In: </span>
+  <span class="countdown" id="countdown">--:--:--:--</span>
+  <span class="urgency-text"> &nbsp;— Get it before price goes up</span>
 </div>
 
-<!-- NAV -->
-<nav>
+<!-- ═══════════════════════════════════════════
+     STICKY NAV
+═══════════════════════════════════════════ -->
+<nav id="main-nav">
   <div class="nav-logo">ACEYGRAM</div>
-  <a href="https://paystack.shop/pay/mr-chisom" target="_blank" class="nav-cta">Get the Book</a>
+  <div class="nav-right">
+    <span class="nav-price">₦5,800</span>
+    <a href="https://paystack.shop/pay/mr-chisom" target="_blank" class="nav-cta" onclick="fbq('track','InitiateCheckout')">Get the Book</a>
+  </div>
 </nav>
 
-<!-- HERO -->
+<!-- ═══════════════════════════════════════════
+     HERO
+═══════════════════════════════════════════ -->
 <section class="hero">
   <div class="hero-grid">
     <div class="hero-left">
-      <div class="hero-eyebrow">📖 True Entrepreneurship Story</div>
+      <div class="hero-eyebrow">📖 True Nigerian Entrepreneurship Story</div>
       <h1>
         <span class="script">From Small Hustle</span>
         <span class="bold-line">to Hundreds of Millions</span>
       </h1>
-      <p class="hero-subtitle">This is the Reason Why Your Small Business Failed</p>
-      <p class="hero-desc">A raw, honest, and practical guide by Chisom Ifeanacho Okeke — from messy finances and no mentors, to building businesses that generate hundreds of millions in turnover. The lessons are real. The mistakes were costly. The wisdom is yours to take.</p>
-      <div class="hero-price-row">
-        <span class="price-now">Get Your Copy</span>
+      <p class="hero-subtitle">The Real Reason Your Small Business Is Failing — And What To Do About It</p>
+      <p class="hero-desc">A raw, honest guide by Chisom Ifeanacho Okeke — from messy finances and no mentors, to building businesses generating hundreds of millions in turnover. The mistakes were costly. The wisdom is yours for far less.</p>
+
+      <!-- PRICE BLOCK — most important conversion fix -->
+      <div class="price-block">
+        <div class="price-anchor">
+          <span class="price-was-label">Regular Price</span>
+          <span class="price-was">₦9,500</span>
+        </div>
+        <div class="price-now-block">
+          <span class="price-now-label">TODAY</span>
+          <span class="price-now">₦5,800</span>
+        </div>
+        <div class="price-saving">You save ₦3,700 — Introductory offer</div>
       </div>
-      <a href="https://paystack.shop/pay/mr-chisom" target="_blank" class="btn-primary">
-        Read This Book Now →
+
+      <a href="https://paystack.shop/pay/mr-chisom" target="_blank" class="btn-primary" onclick="fbq('track','InitiateCheckout')">
+        Get My Copy for ₦5,800 →
       </a>
+
+      <div class="guarantee-inline">
+        <span class="guarantee-icon">🔒</span>
+        <span>Secure Paystack checkout &nbsp;·&nbsp; Instant PDF delivery &nbsp;·&nbsp; 7-day money-back guarantee</span>
+      </div>
+
       <div class="hero-trust">
-        <span class="hero-trust-item">10 Power Chapters</span>
-        <span class="hero-trust-item">Real Nigerian Success Story</span>
-        <span class="hero-trust-item">Actionable Lessons</span>
+        <span class="hero-trust-item">✦ 10 Power Chapters</span>
+        <span class="hero-trust-item">✦ Real Nigerian Story</span>
+        <span class="hero-trust-item">✦ Actionable Lessons</span>
       </div>
     </div>
 
@@ -68,8 +98,7 @@
         <div class="book-scene">
           <div class="book-3d">
             <div class="book-front">
-              <!-- Replace src with your actual cover image path -->
-              <img src="images/hustle-cover.jpg" alt="From Small Hustle to Hundreds of Millions"/>
+              <img src="images/hustle-cover.jpg" alt="From Small Hustle to Hundreds of Millions — Book Cover"/>
             </div>
             <div class="book-spine">
               <span class="spine-text">From Small Hustle to Hundreds of Millions · Chisom Okeke</span>
@@ -80,33 +109,80 @@
         </div>
         <div class="book-shadow-el"></div>
       </div>
+      <!-- Badge on book -->
+      <div class="book-badge">Introductory<br/>Price</div>
     </div>
   </div>
 </section>
 
-<!-- STATS BAR -->
+<!-- ═══════════════════════════════════════════
+     STATS BAR
+═══════════════════════════════════════════ -->
 <div class="stats-bar">
   <div class="stats-inner">
-    <div class="stat-divider">
+    <div class="stat-item">
       <div class="stat-num">10</div>
       <div class="stat-label">Chapters</div>
     </div>
-    <div class="stat-divider">
+    <div class="stat-item">
       <div class="stat-num">33</div>
-      <div class="stat-label">Pages</div>
+      <div class="stat-label">Dense, No-Fluff Pages</div>
     </div>
-    <div class="stat-divider">
+    <div class="stat-item">
       <div class="stat-num">100s</div>
-      <div class="stat-label">of Millions of Naira in Turnover</div>
+      <div class="stat-label">of Millions in Turnover</div>
     </div>
-    <div class="stat-divider">
+    <div class="stat-item">
       <div class="stat-num">3</div>
       <div class="stat-label">Businesses Built</div>
+    </div>
+    <div class="stat-item">
+      <div class="stat-num">12+</div>
+      <div class="stat-label">Years Experience</div>
     </div>
   </div>
 </div>
 
-<!-- ABOUT -->
+<!-- ═══════════════════════════════════════════
+     PROBLEM SECTION — agitate the pain
+═══════════════════════════════════════════ -->
+<section class="problem-section">
+  <div class="section-container">
+    <div class="section-tag">Sound Familiar?</div>
+    <h2 class="section-title">If Your Business Is Struggling, It's Not Your Fault — You Were Never Taught This</h2>
+    <div class="problem-grid">
+      <div class="problem-card">
+        <div class="problem-icon">😰</div>
+        <p>You're working hard every day but your bank account doesn't reflect your effort</p>
+      </div>
+      <div class="problem-card">
+        <div class="problem-icon">💸</div>
+        <p>You mix your personal money with business money and can never tell if you're profitable</p>
+      </div>
+      <div class="problem-card">
+        <div class="problem-icon">🔄</div>
+        <p>You've tried different things but keep making the same expensive mistakes</p>
+      </div>
+      <div class="problem-card">
+        <div class="problem-icon">😔</div>
+        <p>You have no mentor and feel like you're figuring everything out alone — slowly and painfully</p>
+      </div>
+      <div class="problem-card">
+        <div class="problem-icon">📉</div>
+        <p>Your business cannot run without you being present for every single decision</p>
+      </div>
+      <div class="problem-card">
+        <div class="problem-icon">🎯</div>
+        <p>You have no clear vision or structure — just daily survival and firefighting</p>
+      </div>
+    </div>
+    <p class="problem-bridge">I lived all of this — and documented every lesson that got me out. This book is that documentation.</p>
+  </div>
+</section>
+
+<!-- ═══════════════════════════════════════════
+     ABOUT — with CTA
+═══════════════════════════════════════════ -->
 <section class="about">
   <div class="about-grid">
     <div class="about-text">
@@ -138,29 +214,91 @@
         </div>
       </div>
     </div>
-    <div style="position:relative;">
-      <div style="background:var(--surface);border:1px solid var(--border);border-radius:8px;padding:36px;max-width:440px;">
-        <div style="font-size:0.7rem;font-weight:700;letter-spacing:0.1em;text-transform:uppercase;color:var(--gold);margin-bottom:20px;">Inside This Book</div>
-        <div style="color:#8fa0b8;font-size:0.9rem;line-height:2;">
-          ✦ Why most Nigerian businesses fail before year 3<br/>
-          ✦ The entity principle that changed everything<br/>
-          ✦ How to find and use a business mentor<br/>
-          ✦ Building a vision your team can execute<br/>
-          ✦ Turning failure into a strategic advantage<br/>
-          ✦ Creating SOPs so the business runs itself<br/>
-          ✦ Scaling from one industry into another<br/>
-          ✦ Leadership habits that build lasting teams<br/>
-          ✦ What young entrepreneurs must do first<br/>
-          ✦ Building beyond profit — purpose & legacy
+    <div class="about-sidebar">
+      <div class="inside-box">
+        <div class="inside-box-label">Inside This Book</div>
+        <ul class="inside-list">
+          <li>Why most Nigerian businesses fail before year 3</li>
+          <li>The entity principle that changed everything</li>
+          <li>How to find and use a business mentor</li>
+          <li>Building a vision your team can execute</li>
+          <li>Turning failure into a strategic advantage</li>
+          <li>Creating SOPs so the business runs itself</li>
+          <li>Scaling from one industry into another</li>
+          <li>Leadership habits that build lasting teams</li>
+          <li>What young entrepreneurs must do first</li>
+          <li>Building beyond profit — purpose & legacy</li>
+        </ul>
+        <div class="sidebar-cta-wrap">
+          <a href="https://paystack.shop/pay/mr-chisom" target="_blank" class="btn-primary btn-small" onclick="fbq('track','InitiateCheckout')">
+            Get This Book — ₦5,800 →
+          </a>
         </div>
       </div>
     </div>
   </div>
 </section>
 
-<!-- CHAPTERS -->
+<!-- ═══════════════════════════════════════════
+     VALUE STACK — makes price feel cheap
+═══════════════════════════════════════════ -->
+<section class="value-stack">
+  <div class="section-container">
+    <div class="section-tag">What You're Getting</div>
+    <h2 class="section-title">Everything Inside — At One Price</h2>
+    <p class="section-lead">Compare what Chisom's 12+ years of costly trial and error is worth to getting it all in one afternoon of reading.</p>
+    <div class="stack-table">
+      <div class="stack-row stack-header">
+        <div>What You Get</div>
+        <div>Real Value</div>
+      </div>
+      <div class="stack-row">
+        <div><span class="stack-check">✓</span> 10-chapter business blueprint from a real Nigerian entrepreneur</div>
+        <div class="stack-val">₦15,000</div>
+      </div>
+      <div class="stack-row">
+        <div><span class="stack-check">✓</span> Financial discipline framework (the entity principle)</div>
+        <div class="stack-val">₦8,000</div>
+      </div>
+      <div class="stack-row">
+        <div><span class="stack-check">✓</span> Step-by-step mentorship acquisition strategy</div>
+        <div class="stack-val">₦5,000</div>
+      </div>
+      <div class="stack-row">
+        <div><span class="stack-check">✓</span> SOP & systems framework (so business runs without you)</div>
+        <div class="stack-val">₦12,000</div>
+      </div>
+      <div class="stack-row">
+        <div><span class="stack-check">✓</span> 4-question failure analysis framework</div>
+        <div class="stack-val">₦5,000</div>
+      </div>
+      <div class="stack-row">
+        <div><span class="stack-check">✓</span> 7 non-negotiable lessons for young entrepreneurs</div>
+        <div class="stack-val">₦3,000</div>
+      </div>
+      <div class="stack-row stack-total">
+        <div>Total Real Value</div>
+        <div class="stack-val-total">₦48,000+</div>
+      </div>
+      <div class="stack-row stack-price-row">
+        <div><strong>Your Price Today</strong> <span class="stack-note">(introductory offer)</span></div>
+        <div class="stack-final-price">₦5,800</div>
+      </div>
+    </div>
+    <div class="stack-cta">
+      <a href="https://paystack.shop/pay/mr-chisom" target="_blank" class="btn-primary" onclick="fbq('track','InitiateCheckout')">
+        Yes, I Want This for ₦5,800 →
+      </a>
+      <p class="stack-sub">Instant PDF delivery after payment · Read today</p>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════════════════════════════════
+     CHAPTERS
+═══════════════════════════════════════════ -->
 <section class="chapters">
-  <div class="center" style="max-width:1100px;margin:0 auto;">
+  <div class="section-container center">
     <div class="section-tag">What's Inside</div>
     <h2 class="section-title">10 Chapters. Real Lessons. No Fluff.</h2>
     <p class="section-lead">Each chapter is drawn from a real experience — a real mistake, a real turning point, a real result.</p>
@@ -219,9 +357,11 @@
   </div>
 </section>
 
-<!-- LEARN -->
+<!-- ═══════════════════════════════════════════
+     LEARN
+═══════════════════════════════════════════ -->
 <section class="learn">
-  <div class="center" style="max-width:1100px;margin:0 auto;">
+  <div class="section-container center">
     <div class="section-tag">What You'll Take Away</div>
     <h2 class="section-title">Principles That Work Across Every Industry</h2>
     <p class="section-lead">These aren't theories. Every lesson in this book was paid for with real money, real failures, and real growth.</p>
@@ -240,59 +380,47 @@
   </div>
 </section>
 
-<!-- AUTHOR -->
+<!-- ═══════════════════════════════════════════
+     AUTHOR
+═══════════════════════════════════════════ -->
 <section class="author">
   <div class="author-inner">
     <div class="author-img-wrap">
-<div class="img-container">
-      <img src="images/chisom.jpg" alt="Chisom Ifeanacho Okeke" srcset="">
-
-</div>
-      <!-- <div class="author-initials">CIO</div> -->
+      <div class="img-container">
+        <img src="images/chisom.jpg" alt="Chisom Ifeanacho Okeke" />
+      </div>
+      <div class="author-credentials">
+        <span>ISO 9001 Certified</span>
+        <span>ISO 22000 Auditor</span>
+        <span>IFSQN Member</span>
+      </div>
     </div>
     <div>
       <div class="section-tag">Meet the Author</div>
       <div class="author-name">Chisom Ifeanacho Okeke</div>
-      <div class="author-role">Entrepreneur · Business Builder · Founder, Crystal Diagnostics Centre</div>
-      <p class="author-bio">My name is Chisom Ifeanacho Okeke!
-
-A Food Technologist by profession and by practice.
-
-A Graduate from the Federal University of Technology Owerri (FUTO)
-
-I am the Cofounder and CEO of KELAHS INTEGRATED SERVICES, owner of the brand Rasby Tiger Nut Drinks also Managing Partner of CRYSTAL DIAGNOSTIC CENTRE.
-
-Also the Brainchild of Creamy Creations Nigeria; a company dedicated solely on Cakes and Confectionaries!
-
-A Certified Quality Management Systems (QMS) Auditor of the ISO 9001:2008
-
-Also a Certified Food Safety Management System Auditor (FSMS) of the ISO 22000:2005
-
-Member of the International Food Safety Quality Network (IFSQN)!
-
-I am a Businessman to the core and with over 12years+ experience and also a Business Coach.
-
-I mentor Small and Medium Scale Enterprises (SMEs) to help them Build, Scale and Grow their Businesses.
-
-I am married to a beautiful damsel!!!</p>
-      <div class="pull-quote" style="margin-top:24px;">"Failure is not the opposite of success — it is part of it."</div>
+      <div class="author-role">Entrepreneur · Business Coach · Founder, Crystal Diagnostics Centre</div>
+      <p class="author-bio">Chisom is a Food Technologist, multi-business founder, and SME coach with 12+ years of hands-on entrepreneurial experience. He is the Cofounder and CEO of Kelahs Integrated Services, creator of the Rasby Tiger Nut Drinks brand, and Managing Partner of Crystal Diagnostic Centre — businesses that collectively generate hundreds of millions in annual turnover.</p>
+      <p class="author-bio">He built all of this without a silver spoon — through painful mistakes, costly lessons, and the discipline to learn from every failure. Today he coaches Small and Medium Scale Enterprises (SMEs) to build, scale, and grow with the same principles. This book is everything he wishes someone had told him at the start.</p>
+      <div class="pull-quote">"Failure is not the opposite of success — it is part of it."</div>
     </div>
   </div>
 </section>
 
-<!-- TESTIMONIALS -->
+<!-- ═══════════════════════════════════════════
+     TESTIMONIALS
+═══════════════════════════════════════════ -->
 <section class="testimonials">
-  <div class="center" style="max-width:1100px;margin:0 auto;">
+  <div class="section-container center">
     <div class="section-tag">Reader Reviews</div>
-    <h2 class="section-title">What Entrepreneurs Are Saying</h2>
-    <p class="section-lead">From small business owners to young professionals — this book is changing how Nigerians think about building wealth.</p>
+    <h2 class="section-title">What Nigerian Entrepreneurs Are Saying</h2>
+    <p class="section-lead">From small business owners to young professionals — real feedback from real readers.</p>
   </div>
   <div class="testi-grid">
-    <div class="testi-card">
+    <div class="testi-card testi-featured">
       <div class="stars">★★★★★</div>
       <p class="testi-text">"I've read a lot of business books but none spoke to me the way this one did. The part about mixing personal and business finances hit hard — I was doing exactly that. This book literally saved my business."</p>
       <div class="testi-author">
-        <div class="testi-avatar">TA</div>
+        <div class="testi-avatar testi-avatar-a">TA</div>
         <div>
           <div class="testi-name">Tochukwu A.</div>
           <div class="testi-role">Small Business Owner, Enugu</div>
@@ -303,7 +431,7 @@ I am married to a beautiful damsel!!!</p>
       <div class="stars">★★★★★</div>
       <p class="testi-text">"Chapter 2 on mentorship was the wake-up call I didn't know I needed. I've been trying to figure everything out on my own for 3 years. Now I know why I keep hitting the same walls."</p>
       <div class="testi-author">
-        <div class="testi-avatar">KE</div>
+        <div class="testi-avatar testi-avatar-b">KE</div>
         <div>
           <div class="testi-name">Kelechi E.</div>
           <div class="testi-role">Young Entrepreneur, Lagos</div>
@@ -314,7 +442,7 @@ I am married to a beautiful damsel!!!</p>
       <div class="stars">★★★★★</div>
       <p class="testi-text">"The chapter on systems and SOPs changed how I run my salon. I used to be involved in everything. Now my team handles operations and I can finally focus on growing the business."</p>
       <div class="testi-author">
-        <div class="testi-avatar">NO</div>
+        <div class="testi-avatar testi-avatar-c">NO</div>
         <div>
           <div class="testi-name">Ngozi O.</div>
           <div class="testi-role">Beauty Business Owner, Abuja</div>
@@ -325,41 +453,215 @@ I am married to a beautiful damsel!!!</p>
       <div class="stars">★★★★★</div>
       <p class="testi-text">"What I love most is that this isn't theory. Every lesson came from real pain, real money lost, real growth. This is the kind of book Nigerian entrepreneurs actually need."</p>
       <div class="testi-author">
-        <div class="testi-avatar">EI</div>
+        <div class="testi-avatar testi-avatar-d">EI</div>
         <div>
           <div class="testi-name">Emeka I.</div>
-          <div class="testi-role">Tech Startup Founder, PH</div>
+          <div class="testi-role">Tech Startup Founder, Port Harcourt</div>
         </div>
       </div>
     </div>
   </div>
 </section>
 
-<!-- CTA -->
-<section class="cta-section" id="buy">
-  <div class="cta-inner">
-    <div class="section-tag">Get the Book</div>
-    <h2>Stop Repeating the Mistakes That Are Already Documented in This Book.</h2>
-    <p>Every lesson in this book was paid for with real failures, real lost money, and years of hard experience. The least expensive way to learn them is to read this book.</p>
-    <div class="cta-price-row">
-      <span class="price-badge">Available Now</span>
+<!-- ═══════════════════════════════════════════
+     FAQ — handles objections
+═══════════════════════════════════════════ -->
+<section class="faq-section">
+  <div class="section-container">
+    <div class="section-tag">Common Questions</div>
+    <h2 class="section-title">Everything You Need to Know</h2>
+    <div class="faq-list">
+
+      <div class="faq-item">
+        <button class="faq-q" onclick="toggleFaq(this)">
+          Is 33 pages really enough to change my business?
+          <span class="faq-arrow">↓</span>
+        </button>
+        <div class="faq-a">
+          <p>Yes — and here's why. Most business books are 250 pages of fluff with 10 pages of real insight. This book is the opposite: 33 dense, actionable pages where every paragraph earns its place. Chisom spent 12+ years earning these lessons at real cost. You get the entire distilled result in under an hour of reading. The best business advice is specific and direct — not long.</p>
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-q" onclick="toggleFaq(this)">
+          How will I receive the book after payment?
+          <span class="faq-arrow">↓</span>
+        </button>
+        <div class="faq-a">
+          <p>After successful payment on Paystack, you'll receive an instant download link to the PDF. You can read it on your phone, tablet, or laptop immediately. If you have any issues, contact us on WhatsApp at +234 803 717 1417.</p>
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-q" onclick="toggleFaq(this)">
+          Is this relevant if my business is still small or just starting?
+          <span class="faq-arrow">↓</span>
+        </button>
+        <div class="faq-a">
+          <p>This is especially for you. The lessons in this book are most powerful when applied early — before you've already made the expensive mistakes. Chapter 9 is dedicated entirely to young entrepreneurs starting out. These are the principles that would have saved Chisom years of painful trial and error if he'd known them at the start.</p>
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-q" onclick="toggleFaq(this)">
+          What if I'm not satisfied with the book?
+          <span class="faq-arrow">↓</span>
+        </button>
+        <div class="faq-a">
+          <p>We offer a 7-day money-back guarantee. If you read the book and feel it wasn't worth your ₦5,800, send us a message on WhatsApp within 7 days of purchase and we'll refund you — no questions asked. That's how confident we are in this book's value.</p>
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-q" onclick="toggleFaq(this)">
+          Why is there an introductory price? Will it go up?
+          <span class="faq-arrow">↓</span>
+        </button>
+        <div class="faq-a">
+          <p>Yes. ₦5,800 is the launch price for early readers. After the introductory period ends, the price moves to ₦9,500. If you're reading this before the countdown hits zero, you're still in time to lock in the lower price.</p>
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-q" onclick="toggleFaq(this)">
+          Is Paystack safe to pay through?
+          <span class="faq-arrow">↓</span>
+        </button>
+        <div class="faq-a">
+          <p>Absolutely. Paystack is Nigeria's most trusted payment platform, processing millions of transactions daily for businesses across the country. Your card and bank details are fully encrypted and never stored. It's the same platform used by major Nigerian e-commerce sites.</p>
+        </div>
+      </div>
+
     </div>
-    <a href="https://paystack.shop/pay/mr-chisom" target="_blank" class="btn-primary">
-      Get Your Copy Today →
-    </a>
-    <div style="margin-top:16px;font-size:0.8rem;color:var(--muted);">Instant delivery · PDF format · Start reading in minutes</div>
   </div>
 </section>
 
+<!-- ═══════════════════════════════════════════
+     FINAL CTA
+═══════════════════════════════════════════ -->
+<section class="cta-section" id="buy">
+  <div class="cta-inner">
+    <div class="section-tag">Get the Book Now</div>
+    <h2>Stop Repeating Mistakes That Are Already Documented in This Book</h2>
+    <p>Every lesson was paid for with real failures, real lost money, and years of hard experience. The least expensive way to learn them is ₦5,800.</p>
 
-<a href="https://wa.me/2348037171417" target="_blank" class="whatsapp-float">
-    <img src="images/whatsapp-icon.png" alt="WhatsApp contact button - green circle with white phone handset icon" />
+    <div class="cta-price-display">
+      <span class="cta-was">₦9,500</span>
+      <span class="cta-arrow">→</span>
+      <span class="cta-now">₦5,800</span>
+      <span class="cta-save">Save ₦3,700</span>
+    </div>
+
+    <a href="https://paystack.shop/pay/mr-chisom" target="_blank" class="btn-primary btn-large" onclick="fbq('track','InitiateCheckout')">
+      Get My Copy for ₦5,800 →
+    </a>
+
+    <div class="cta-guarantee">
+      <div class="guarantee-badge">
+        <div class="guarantee-badge-icon">🔒</div>
+        <div>
+          <strong>7-Day Money-Back Guarantee</strong>
+          <p>Not satisfied? Full refund. No questions.</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="cta-delivery">
+      <span>✦ Secure Paystack checkout</span>
+      <span>✦ Instant PDF delivery</span>
+      <span>✦ Read on any device</span>
+      <span>✦ 7-day guarantee</span>
+    </div>
+  </div>
+</section>
+
+<!-- WhatsApp Float -->
+<a href="https://wa.me/2348037171417" target="_blank" class="whatsapp-float" aria-label="Contact us on WhatsApp">
+  <img src="images/whatsapp-icon.png" alt="WhatsApp" />
 </a>
+
+<!-- Mobile Sticky CTA Bar -->
+<div class="mobile-sticky-bar" id="mobileStickyBar">
+  <div class="mobile-sticky-inner">
+    <div class="mobile-sticky-price">
+      <span class="mobile-price-was">₦9,500</span>
+      <span class="mobile-price-now">₦5,800</span>
+    </div>
+    <a href="https://paystack.shop/pay/mr-chisom" target="_blank" class="mobile-sticky-btn" onclick="fbq('track','InitiateCheckout')">
+      Get My Copy →
+    </a>
+  </div>
+</div>
 
 <!-- FOOTER -->
 <footer>
   <p>© 2026 Chisom Ifeanacho Okeke · All rights reserved · <a href="https://aceygram.vercel.app">Aceygram</a></p>
 </footer>
+
+<script>
+// ── Countdown Timer ──────────────────────────────────────────
+(function() {
+  const deadline = new Date('2026-05-31T23:59:59').getTime();
+
+  function pad(n) { return String(n).padStart(2, '0'); }
+
+  function updateCountdown() {
+    const now = Date.now();
+    const diff = deadline - now;
+    if (diff <= 0) {
+      document.getElementById('countdown').textContent = 'EXPIRED';
+      return;
+    }
+    const days    = Math.floor(diff / (1000 * 60 * 60 * 24));
+    const hours   = Math.floor((diff % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+    const minutes = Math.floor((diff % (1000 * 60 * 60)) / (1000 * 60));
+    const seconds = Math.floor((diff % (1000 * 60)) / 1000);
+    document.getElementById('countdown').textContent =
+      `${pad(days)}d ${pad(hours)}h ${pad(minutes)}m ${pad(seconds)}s`;
+  }
+
+  updateCountdown();
+  setInterval(updateCountdown, 1000);
+})();
+
+// ── FAQ Toggle ────────────────────────────────────────────────
+function toggleFaq(btn) {
+  const item   = btn.parentElement;
+  const answer = item.querySelector('.faq-a');
+  const arrow  = btn.querySelector('.faq-arrow');
+  const isOpen = item.classList.contains('open');
+
+  // Close all
+  document.querySelectorAll('.faq-item.open').forEach(el => {
+    el.classList.remove('open');
+    el.querySelector('.faq-a').style.maxHeight = null;
+    el.querySelector('.faq-arrow').textContent = '↓';
+  });
+
+  if (!isOpen) {
+    item.classList.add('open');
+    answer.style.maxHeight = answer.scrollHeight + 'px';
+    arrow.textContent = '↑';
+  }
+}
+
+// ── Mobile sticky bar: show after hero scrolls out ────────────
+(function() {
+  const bar = document.getElementById('mobileStickyBar');
+  const hero = document.querySelector('.hero');
+
+  const observer = new IntersectionObserver(entries => {
+    bar.classList.toggle('visible', !entries[0].isIntersecting);
+  }, { threshold: 0 });
+
+  if (hero) observer.observe(hero);
+})();
+
+// ── Nav shadow on scroll ──────────────────────────────────────
+window.addEventListener('scroll', function() {
+  document.getElementById('main-nav').classList.toggle('scrolled', window.scrollY > 60);
+});
+</script>
 
 </body>
 </html>
